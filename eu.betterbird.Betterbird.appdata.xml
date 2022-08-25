@@ -38,20 +38,12 @@
   <project_license>MPL-2.0</project_license>
   <developer_name>Betterbird Project</developer_name>
 
-  <!--
-    From the official Thunderbird website
-    https://www.thunderbird.net/
-    https://www.thunderbird.net/features/
-    https://github.com/thundernest/thunderbird-website/
-    https://github.com/thundernest/thunderbird-website/tree/master/media/img/l10n/en-US/thunderbird/landing
-    TODO: Replace by actual Betterbird screenshots showcasing its distinctive features (e.g. multiline list view).
-  --> 
   <screenshots>
     <screenshot type="default">
-      <image>https://raw.githubusercontent.com/flathub/org.mozilla.Thunderbird/master/screenshot_light.png</image>
+      <image>https://raw.githubusercontent.com/mfschumann/betterbird-flatpak/master/screenshot_light.png</image>
     </screenshot>
     <screenshot>
-      <image>https://raw.githubusercontent.com/flathub/org.mozilla.Thunderbird/master/screenshot_dark.png</image>
+      <image>https://raw.githubusercontent.com/mfschumann/betterbird-flatpak/master/screenshot_dark.png</image>
     </screenshot>
   </screenshots>
 
