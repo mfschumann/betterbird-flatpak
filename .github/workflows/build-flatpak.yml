@@ -5,8 +5,8 @@ name: CI
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
-  #push:
-  #  branches: [ "master" ]
+  push:
+    branches: [ "setup-build", "master" ]
   #pull_request:
   #  branches: [ "master" ]
 
@@ -27,9 +27,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
-      - name: Checkout submodules
-        uses: textbook/git-checkout-submodule-action@2.1.1
+        with:
+          submodules: recursive
           
       - name: Flatpak Builder
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
