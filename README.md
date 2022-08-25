@@ -9,8 +9,13 @@ Non flatpak-packaging issues should be reported upstream at<br>
 https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird
 
 #### Migration from pre-exisiting non-flatpak installations
-In order to migrate from pre-exisiting non-flatpak installation and preserve all settings please copy or move entire<br>
+In order to migrate from pre-exisiting non-flatpak Thunderbird installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
+folder into<br>
+`~/.var/app/eu.betterbird.Betterbird/.betterbird`
+
+In order to migrate from pre-exisiting non-flatpak Betterbird installation and preserve all settings please copy or move entire<br>
+`~/.betterbird`<br>
 folder into<br>
 `~/.var/app/eu.betterbird.Betterbird/.betterbird`
 
