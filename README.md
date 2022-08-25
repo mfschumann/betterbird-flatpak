@@ -14,7 +14,7 @@ https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird
 In order to migrate from pre-exisiting Thunderbird flatpak installation and preserve all settings please copy or move entire<br>
 `~/.var/app/org.mozilla.Thunderbird/.thunderbird`<br>
 folder into<br>
-`~/.var/app/eu.betterbird.Betterbird/.betterbird`
+`~/.var/app/eu.betterbird.Betterbird/.thunderbird`
 
 ##### Migration from pre-exisiting Thunderbird non-flatpak installations
 In order to migrate from pre-exisiting non-flatpak Thunderbird installation and preserve all settings please copy or move entire<br>
@@ -24,7 +24,7 @@ folder into<br>
 
 ##### Migration from pre-exisiting Betterbird non-flatpak installations
 In order to migrate from pre-exisiting non-flatpak Betterbird installation and preserve all settings please copy or move entire<br>
-`~/.betterbird`<br>
+`~/.thunderbird`<br>
 folder into<br>
 `~/.var/app/eu.betterbird.Betterbird/.betterbird`
 
