@@ -27,9 +27,12 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+      
+      - name: Checkout submodules
+        uses: textbook/git-checkout-submodule-action@2.1.1
           
       - name: Flatpak Builder
-        uses: flatpak/flatpak-github-actions@v2
+        uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           # The relative path of the manifest file.
           manifest-path: eu.betterbird.Betterbird.json
