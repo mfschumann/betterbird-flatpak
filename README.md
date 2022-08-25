@@ -8,6 +8,12 @@ Betterbird is a fine-tuned version of [Mozilla Thunderbird](https://www.thunderb
 Non flatpak-packaging issues should be reported upstream at<br>
 https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird
 
+#### Migration from pre-exisiting Thunderbird flatpak installations
+In order to migrate from pre-exisiting Thunderbird flatpak installation and preserve all settings please copy or move entire<br>
+`~/.var/app/org.mozilla.Thunderbird/.thunderbird`<br>
+folder into<br>
+`~/.var/app/eu.betterbird.Betterbird/.betterbird`
+
 #### Migration from pre-exisiting non-flatpak installations
 In order to migrate from pre-exisiting non-flatpak Thunderbird installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
