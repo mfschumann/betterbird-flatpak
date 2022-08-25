@@ -12,10 +12,10 @@ https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird
 In order to migrate from pre-exisiting non-flatpak installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
 folder into<br>
-`~/.var/app/org.mozilla.Thunderbird/.thunderbird`
+`~/.var/app/eu.betterbird.Betterbird/.betterbird`
 
-In case Thunderbird opens a new profile instead of the existing one, run:<br>
-`flatpak run org.mozilla.Thunderbird -P`<br>
+In case Betterbird opens a new profile instead of the existing one, run:<br>
+`flatpak run eu.betterbird.Betterbird -P`<br>
 then select the right profile and tick "*Use the selected profile without asking on startup*" box.
 
 #### Language support
