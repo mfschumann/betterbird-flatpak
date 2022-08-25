@@ -1,14 +1,14 @@
-# This is a basic workflow to help you get started with Actions
+# This workflow tests if building a flatpak bundle from the manifest works.
 
-name: CI
+name: build-flatpak
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
-    branches: [ "setup-build", "master" ]
-  #pull_request:
-  #  branches: [ "master" ]
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -23,15 +23,16 @@ jobs:
       image: bilelmoussaoui/flatpak-github-actions:freedesktop-21.08
       options: --privileged
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
           submodules: recursive
           
+      # Runs flatpak builder to test if building works
       - name: Flatpak Builder
         uses: bilelmoussaoui/flatpak-github-actions/flatpak-builder@v4
         with:
           # The relative path of the manifest file.
           manifest-path: eu.betterbird.Betterbird.json
+          bundle: eu.betterbird.Betterbird.flatpak
