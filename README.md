@@ -20,13 +20,13 @@ folder into<br>
 In order to migrate from pre-exisiting non-flatpak Thunderbird installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
 folder into<br>
-`~/.var/app/eu.betterbird.Betterbird/.betterbird`
+`~/.var/app/eu.betterbird.Betterbird/.thunderbird`
 
 ##### Migration from pre-exisiting Betterbird non-flatpak installations
 In order to migrate from pre-exisiting non-flatpak Betterbird installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
 folder into<br>
-`~/.var/app/eu.betterbird.Betterbird/.betterbird`
+`~/.var/app/eu.betterbird.Betterbird/.thunderbird`
 
 In case Betterbird opens a new profile instead of the existing one, run:<br>
 `flatpak run eu.betterbird.Betterbird -P`<br>
