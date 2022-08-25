@@ -40,3 +40,4 @@ jobs:
         with:
           # The relative path of the manifest file.
           manifest-path: eu.betterbird.Betterbird.json
+          runtime-repo: 'https://flathub.org/repo/flathub.flatpakrepo'
