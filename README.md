@@ -8,14 +8,28 @@ Betterbird is a fine-tuned version of [Mozilla Thunderbird](https://www.thunderb
 Non flatpak-packaging issues should be reported upstream at<br>
 https://bugzilla.mozilla.org/describecomponents.cgi?product=Thunderbird
 
-#### Migration from pre-exisiting non-flatpak installations
-In order to migrate from pre-exisiting non-flatpak installation and preserve all settings please copy or move entire<br>
+#### Migration from pre-exisiting installations
+
+##### Migration from pre-exisiting Thunderbird flatpak installations
+In order to migrate from pre-exisiting Thunderbird flatpak installation and preserve all settings please copy or move entire<br>
+`~/.var/app/org.mozilla.Thunderbird/.thunderbird`<br>
+folder into<br>
+`~/.var/app/eu.betterbird.Betterbird/.thunderbird`
+
+##### Migration from pre-exisiting Thunderbird non-flatpak installations
+In order to migrate from pre-exisiting non-flatpak Thunderbird installation and preserve all settings please copy or move entire<br>
 `~/.thunderbird`<br>
 folder into<br>
-`~/.var/app/org.mozilla.Thunderbird/.thunderbird`
+`~/.var/app/eu.betterbird.Betterbird/.thunderbird`
 
-In case Thunderbird opens a new profile instead of the existing one, run:<br>
-`flatpak run org.mozilla.Thunderbird -P`<br>
+##### Migration from pre-exisiting Betterbird non-flatpak installations
+In order to migrate from pre-exisiting non-flatpak Betterbird installation and preserve all settings please copy or move entire<br>
+`~/.thunderbird`<br>
+folder into<br>
+`~/.var/app/eu.betterbird.Betterbird/.thunderbird`
+
+In case Betterbird opens a new profile instead of the existing one, run:<br>
+`flatpak run eu.betterbird.Betterbird -P`<br>
 then select the right profile and tick "*Use the selected profile without asking on startup*" box.
 
 #### Language support
